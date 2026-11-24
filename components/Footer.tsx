@@ -45,7 +45,7 @@ const ContactRow = ({ icon, value }: { icon: string; value: string }) => (
 export function Footer() {
   return (
     <footer id="footer" className="relative overflow-hidden bg-[#fdfcfb]">
-      <div className="mx-auto w-full max-w-[1440px] px-4 py-6 sm:px-6 sm:py-7 lg:px-8 xl:py-8">
+      <div className="mx-auto w-full max-w-[1440px] px-4 py-5 sm:px-6 sm:py-6 md:py-7 lg:px-8 lg:py-8 xl:py-10">
         <Reveal>
           <div className="grid grid-cols-2 items-start gap-x-5 gap-y-8 sm:gap-y-10 lg:grid-cols-[1.15fr_0.8fr_0.9fr_1.15fr] lg:items-center lg:gap-0">
             <div className="col-span-2 flex flex-col items-center text-center lg:col-span-1 lg:items-start lg:pr-8 lg:text-left">

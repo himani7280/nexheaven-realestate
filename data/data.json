@@ -55,8 +55,8 @@
               { "key": "Services",     "component": "NexHavenServices1" },
               { "key": "Gallery",      "component": "NexHavenGallery1" },
               { "key": "Testimonials", "component": "NexHavenTestimonials1" },
-              { "key": "Contact",      "component": "NexHavenContact1" },
-              { "key": "Faqs",         "component": "NexHavenFaqs1" }
+              { "key": "Faqs",         "component": "NexHavenFaqs1" },
+              { "key": "Contact",      "component": "NexHavenContact1" }
             ]
           }
         }
@@ -385,7 +385,7 @@
     "layout": {
       "maxWidth": "1440px",
       "container": "mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8",
-      "section": "overflow-x-clip py-6 sm:py-7 xl:py-8",
+      "section": "overflow-x-clip py-5 sm:py-6 md:py-7 lg:py-8 xl:py-10",
       "htmlLang": "en",
       "htmlClass": "h-full overflow-x-clip scroll-smooth scroll-pt-[84px] antialiased",
       "bodyClass": "flex min-h-full flex-col overflow-x-clip bg-[#fdfcfb] font-['DM_Sans',system-ui,sans-serif] text-[15px] leading-[1.7] text-[#1d2330] [text-rendering:optimizeLegibility] selection:bg-[#6b1b35] selection:text-white [&_:focus-visible]:rounded-md [&_:focus-visible]:outline-2 [&_:focus-visible]:outline-offset-2 [&_:focus-visible]:outline-[#6b1b35]"

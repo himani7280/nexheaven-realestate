@@ -19,9 +19,18 @@ export function Navbar() {
   }, []);
 
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => entries.forEach((entry) => entry.isIntersecting && setActive(`#${entry.target.id}`)), { rootMargin: "-45% 0px -50% 0px" });
-    NAV_LINKS.forEach((link) => {
-      const el = document.getElementById(link.href.slice(1));
+    const contactId = NAV_CTA.href.slice(1);
+    const observer = new IntersectionObserver(
+      (entries) =>
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActive(entry.target.id === contactId ? NAVBAR.homeHref : `#${entry.target.id}`);
+          }
+        }),
+      { rootMargin: "-45% 0px -50% 0px" },
+    );
+    [...NAV_LINKS.map((link) => link.href.slice(1)), contactId].forEach((id) => {
+      const el = document.getElementById(id);
       if (el) observer.observe(el);
     });
     return () => observer.disconnect();
@@ -64,7 +73,7 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <a href={NAV_CTA.href} className="group hidden h-[46px] items-center gap-2.5 rounded-lg bg-[#c0925f] px-6 text-[16px] font-semibold text-white shadow-[0_10px_20px_-10px_rgba(169,122,73,0.9)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#a97a49] sm:inline-flex">
+          <a href={NAV_CTA.href} onClick={() => setActive(NAVBAR.homeHref)} className="group hidden h-[46px] items-center gap-2.5 rounded-lg bg-[#c0925f] px-6 text-[16px] font-semibold text-white shadow-[0_10px_20px_-10px_rgba(169,122,73,0.9)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#a97a49] sm:inline-flex">
             <PhoneFilledIcon size={18} className="transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110" />
             {NAV_CTA.label}
           </a>
@@ -121,7 +130,10 @@ export function Navbar() {
             <li className="pt-2 sm:hidden">
               <a
                 href={NAV_CTA.href}
-                onClick={() => setOpen(false)}
+                onClick={() => {
+                  setOpen(false);
+                  setActive(NAVBAR.homeHref);
+                }}
                 className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-lg bg-[#c0925f] text-[15px] font-semibold text-white transition hover:bg-[#a97a49]"
               >
                 <PhoneFilledIcon size={16} />

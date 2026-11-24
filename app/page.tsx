@@ -27,7 +27,7 @@ export default function Home() {
         <HomeHero />
 
       {/* About */}
-      <section id="about" className={`${SECTION} overflow-hidden bg-white`}>
+      <section id="about" className="overflow-hidden bg-white pt-10 pb-5 sm:pt-12 sm:pb-6 md:pt-14 md:pb-7 lg:pt-16 lg:pb-8 xl:pt-20 xl:pb-10">
         <div className={CONTAINER}>
           <div className="grid items-center gap-6 lg:grid-cols-[0.88fr_1.12fr] lg:gap-6 xl:gap-8">
             <FramedPhoto src={IMG[about.image]} alt={about.imageAlt} aspect="aspect-[4/2.95]" priority />
@@ -123,6 +123,40 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── FAQs ── */}
+      <section id="faqs" className={SECTION}>
+        <div className={CONTAINER}>
+          <SectionHeading eyebrow={faqs.eyebrow} plain={faqs.titlePlain} accent={faqs.titleAccent} text={faqs.text} tone="maroon" />
+
+          <div className="mt-7 grid items-stretch gap-8 lg:min-h-[372px] lg:grid-cols-[0.72fr_1.78fr] lg:gap-10 xl:mt-8 xl:min-h-[356px]">
+            <Reveal x={-40} y={0} className="relative h-full lg:border-r lg:border-[#c0925f]">
+              <div className="relative flex flex-col items-center justify-start px-6 pb-2 pt-3 text-center sm:px-8 lg:items-start lg:text-left">
+                {/* Corner accent */}
+                <span
+                  className="pointer-events-none absolute left-0 top-0 h-[210px] w-[38%] rounded-tl-xl border-l border-t border-[#c0925f]"
+                  aria-hidden="true"
+                />
+                <div className="flex w-full justify-center">
+                  <Float amount={5} duration={5}>
+                    <QuestionBubblesIcon size={168} className="text-[#6b1b35] transition-transform duration-300 hover:scale-105" />
+                  </Float>
+                </div>
+                <h3 className="mt-3 font-['Playfair_Display',Georgia,serif] text-[36px] font-bold leading-[1.06] text-[#6b1b35] sm:text-[40px] xl:text-[44px]">
+                  {faqs.sideTitle}
+                  <span className="block text-[#c0925f]">{faqs.sideAccent}</span>
+                </h3>
+                <span className="mt-3 block h-[3px] w-[80px] rounded-full bg-[#6b1b35]" />
+                <p className="mt-3 max-w-[310px] text-[15px] leading-[1.55] text-[#3f4654] sm:text-[15.5px]">{faqs.sideText}</p>
+              </div>
+            </Reveal>
+
+            <Reveal delay={0.1} className="h-full">
+              <FaqList />
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
       {/* ── Contact ── */}
       <section id="contact" className={SECTION}>
         <div className={CONTAINER}>
@@ -160,40 +194,6 @@ export default function Home() {
 
             <Reveal delay={0.2} x={40} y={0} className="h-full">
               <ContactForm />
-            </Reveal>
-          </div>
-        </div>
-      </section>
-
-      {/* ── FAQs ── */}
-      <section id="faqs" className={SECTION}>
-        <div className={CONTAINER}>
-          <SectionHeading eyebrow={faqs.eyebrow} plain={faqs.titlePlain} accent={faqs.titleAccent} text={faqs.text} tone="maroon" />
-
-          <div className="mt-7 grid items-stretch gap-8 lg:min-h-[372px] lg:grid-cols-[0.72fr_1.78fr] lg:gap-10 xl:mt-8 xl:min-h-[356px]">
-            <Reveal x={-40} y={0} className="relative h-full lg:border-r lg:border-[#c0925f]">
-              <div className="relative flex flex-col items-center justify-start px-6 pb-2 pt-3 text-center sm:px-8 lg:items-start lg:text-left">
-                {/* Corner accent */}
-                <span
-                  className="pointer-events-none absolute left-0 top-0 h-[210px] w-[38%] rounded-tl-xl border-l border-t border-[#c0925f]"
-                  aria-hidden="true"
-                />
-                <div className="flex w-full justify-center">
-                  <Float amount={5} duration={5}>
-                    <QuestionBubblesIcon size={168} className="text-[#6b1b35] transition-transform duration-300 hover:scale-105" />
-                  </Float>
-                </div>
-                <h3 className="mt-3 font-['Playfair_Display',Georgia,serif] text-[36px] font-bold leading-[1.06] text-[#6b1b35] sm:text-[40px] xl:text-[44px]">
-                  {faqs.sideTitle}
-                  <span className="block text-[#c0925f]">{faqs.sideAccent}</span>
-                </h3>
-                <span className="mt-3 block h-[3px] w-[80px] rounded-full bg-[#6b1b35]" />
-                <p className="mt-3 max-w-[310px] text-[15px] leading-[1.55] text-[#3f4654] sm:text-[15.5px]">{faqs.sideText}</p>
-              </div>
-            </Reveal>
-
-            <Reveal delay={0.1} className="h-full">
-              <FaqList />
             </Reveal>
           </div>
         </div>
