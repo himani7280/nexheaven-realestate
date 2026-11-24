@@ -1,0 +1,416 @@
+{
+  "NexHaven": {
+    "fonts": {
+      "googleFontsHref": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap",
+      "preconnectHref": "https://fonts.googleapis.com",
+      "preconnectStaticHref": "https://fonts.gstatic.com",
+      "fontVars": {
+        "--font-body": "\"DM Sans\", system-ui, sans-serif",
+        "--font-heading": "\"Playfair Display\", Georgia, serif",
+        "--font-accent": "\"Cormorant Garamond\", Georgia, serif"
+      },
+      "heading": {
+        "family": "Playfair Display",
+        "fallback": "Georgia, serif"
+      },
+      "accent": {
+        "family": "Cormorant Garamond",
+        "fallback": "Georgia, serif"
+      },
+      "body": {
+        "family": "DM Sans",
+        "fallback": "system-ui, sans-serif"
+      },
+      "googleFonts": [
+        {
+          "family": "DM Sans",
+          "spec": "wght@400;500;600;700",
+          "weights": ["400", "500", "600", "700"]
+        },
+        {
+          "family": "Playfair Display",
+          "spec": "wght@500;600;700",
+          "weights": ["500", "600", "700"]
+        },
+        {
+          "family": "Cormorant Garamond",
+          "spec": "wght@500;600;700",
+          "weights": ["500", "600", "700"]
+        }
+      ]
+    },
+
+    "templateComponents": {
+      "template-1": {
+        "shared": {
+          "Header": "NexHavenHeader1",
+          "Footer": "NexHavenFooter1"
+        },
+        "pages": {
+          "home": {
+            "components": [
+              { "key": "Home",         "component": "NexHavenHome1" },
+              { "key": "About",        "component": "NexHavenAbout1" },
+              { "key": "Properties",   "component": "NexHavenProperties1" },
+              { "key": "Services",     "component": "NexHavenServices1" },
+              { "key": "Gallery",      "component": "NexHavenGallery1" },
+              { "key": "Testimonials", "component": "NexHavenTestimonials1" },
+              { "key": "Contact",      "component": "NexHavenContact1" },
+              { "key": "Faqs",         "component": "NexHavenFaqs1" }
+            ]
+          }
+        }
+      }
+    },
+
+    "sections": {
+      "SiteChrome": {
+        "variants": {
+          "NexHavenHeader1": {
+            "site": {
+              "titleDefault": "NexHaven Real Estate | Premium Properties & Real Estate Solutions",
+              "titleTemplate": "%s | NexHaven Real Estate",
+              "description": "NexHaven Real Estate helps you buy, sell, rent and invest in premium residential and commercial properties with confidence.",
+              "copyrightPrefix": "Copyright © 2026 NexHaven Real Estate.",
+              "copyrightSuffix": "All Rights Reserved. | Powered by",
+              "poweredBy": "Lestow",
+              "htmlLang": "en"
+            },
+            "brand": {
+              "name": "NexHaven Real Estate",
+              "tagline": "Your trusted partner in buying, selling, and investing in real estate.",
+              "footerName": "NexHaven Real Estate",
+              "phone": "+1 00000 00000",
+              "email": "info@xyz.com",
+              "address": "350 Fifth Avenue, Suite 4200, New York, NY 10118, USA"
+            },
+            "navLinks": [
+              { "label": "Home",         "href": "#home" },
+              { "label": "About Us",     "href": "#about" },
+              { "label": "Properties",   "href": "#properties" },
+              { "label": "Services",     "href": "#services" },
+              { "label": "Gallery",      "href": "#gallery" },
+              { "label": "Testimonials", "href": "#testimonials" },
+              { "label": "FAQ",          "href": "#faqs" }
+            ],
+            "navbar": {
+              "homeHref": "#home",
+              "homeAriaLabel": "NexHaven home",
+              "mainNavAriaLabel": "Main",
+              "mobileNavAriaLabel": "Mobile",
+              "openMenuLabel": "Open menu",
+              "closeMenuLabel": "Close menu",
+              "cta": {
+                "label": "Contact Us",
+                "href": "#contact"
+              }
+            },
+            "cta": {
+              "label": "Contact Us",
+              "href": "#contact"
+            }
+          },
+          "NexHavenFooter1": {
+            "blurb": "Your trusted partner in buying, selling, and investing in real estate.",
+            "quickLinksTitle": "Quick Links",
+            "usefulLinksTitle": "Useful Links",
+            "contactTitle": "Get in Touch",
+            "scrollTopHref": "#home",
+            "scrollTopLabel": "Scroll to top",
+            "copyright": "Copyright © 2026 NexHaven Real Estate. All Rights Reserved. | Powered by Lestow",
+            "socials": [
+              { "key": "facebook",  "label": "Facebook",  "href": "https://www.facebook.com" },
+              { "key": "instagram", "label": "Instagram", "href": "https://www.instagram.com" },
+              { "key": "linkedin",  "label": "LinkedIn",  "href": "https://www.linkedin.com" },
+              { "key": "youtube",   "label": "YouTube",   "href": "https://www.youtube.com" }
+            ],
+            "quickLinks": [
+              { "label": "Home",       "href": "#home" },
+              { "label": "About Us",   "href": "#about" },
+              { "label": "Services",   "href": "#services" },
+              { "label": "Properties", "href": "#properties" }
+            ],
+            "usefulLinks": [
+              { "label": "Why Choose Us", "href": "#about" },
+              { "label": "Testimonials",  "href": "#testimonials" },
+              { "label": "FAQs",          "href": "#faqs" },
+              { "label": "Contact Us",    "href": "#contact" }
+            ]
+          }
+        }
+      },
+
+      "Media": {
+        "variants": {
+          "NexHavenImages1": {
+            "images": {
+              "logo":             "/images/logo.webp",
+              "footerLogo":       "/images/logo.webp",
+              "heroBannerHd":     "/images/hero-banner-hd.webp",
+              "aboutHouse":       "/images/about-house.webp",
+              "villa":            "/images/property-villa.webp",
+              "apartment":        "/images/property-apartment.webp",
+              "office":           "/images/property-office.webp",
+              "plot":             "/images/property-plot.webp",
+              "gallery1":         "/images/gallery-1.webp",
+              "gallery2":         "/images/gallery-2.webp",
+              "gallery3":         "/images/gallery-3.webp",
+              "gallery4":         "/images/gallery-4.webp",
+              "gallery5":         "/images/gallery-5.webp",
+              "testimonialHouse": "/images/testimonial-house.webp",
+              "contactHouse":     "/images/contact-house.webp",
+              "avatarRohan":      "/images/avatar-rohan.webp",
+              "avatarAnanya":     "/images/avatar-ananya.webp",
+              "avatarVikram":     "/images/avatar-vikram.webp"
+            }
+          }
+        }
+      },
+
+      "Home": {
+        "variants": {
+          "NexHavenHome1": {
+            "metadata": {
+              "title": "NexHaven Real Estate | Premium Properties & Real Estate Solutions",
+              "description": "NexHaven Real Estate helps you buy, sell, rent and invest in premium residential and commercial properties with confidence."
+            },
+            "hero": {
+              "eyebrow": "Premium Real Estate Solutions",
+              "titleLine1": "Find Your",
+              "titleLine2": "Dream Home",
+              "textBefore": "Discover premium properties, modern living spaces, and investment opportunities with",
+              "textBrand": "NEXHAVEN.",
+              "image": "heroBannerHd",
+              "imageAlt": "Modern luxury home glowing at sunset",
+              "stats": [
+                { "value": 500,  "suffix": "+", "label": "Premium Properties" },
+                { "value": 1200, "suffix": "+", "label": "Happy Families" }
+              ]
+            },
+            "about": {
+              "eyebrow": "About Us",
+              "titleLine1": "More Than Properties,",
+              "titleLine2": "We Build Lifestyles.",
+              "text": "At NEXHAVEN, we believe a home is more than just a space — it's a foundation for your dreams, your family and your future. With a commitment to quality, trust and timeless design, we create residential and commercial spaces that inspire, enrich and endure.",
+              "image": "aboutHouse",
+              "imageAlt": "Luxury villa with swimming pool",
+              "features": [
+                { "icon": "home",   "title": "Premium Properties", "text": "Curated for modern living" },
+                { "icon": "shield", "title": "Trusted by Many",    "text": "Built on transparency" },
+                { "icon": "leaf",   "title": "Sustainable Living", "text": "For a better tomorrow" },
+                { "icon": "users",  "title": "Expert Guidance",    "text": "Every step of the way." }
+              ]
+            },
+            "properties": {
+              "eyebrow": "Our Properties",
+              "titlePlain": "Explore Our",
+              "titleAccent": "Premium Properties",
+              "text": "A curated selection of residential and commercial properties designed for modern living and smart investment.",
+              "items": [
+                {
+                  "badge": "For Sale",
+                  "title": "Luxury Villa",
+                  "location": "Gurgaon, Haryana",
+                  "image": "villa",
+                  "meta": [
+                    { "icon": "bed",  "label": "4 Beds" },
+                    { "icon": "bath", "label": "4 Baths" },
+                    { "icon": "area", "label": "3,200 Sq.Ft." }
+                  ]
+                },
+                {
+                  "badge": "For Rent",
+                  "title": "Modern Apartment",
+                  "location": "Delhi, NCR",
+                  "image": "apartment",
+                  "meta": [
+                    { "icon": "bed",  "label": "3 Beds" },
+                    { "icon": "bath", "label": "3 Baths" },
+                    { "icon": "area", "label": "1,650 Sq.Ft." }
+                  ]
+                },
+                {
+                  "badge": "Commercial",
+                  "title": "Office Space",
+                  "location": "Noida, Uttar Pradesh",
+                  "image": "office",
+                  "meta": [
+                    { "icon": "briefcase", "label": "Furnished" },
+                    { "icon": "parking",   "label": "Parking" },
+                    { "icon": "area",      "label": "2,500 Sq.Ft." }
+                  ]
+                },
+                {
+                  "badge": "Plot",
+                  "title": "Residential Plot",
+                  "location": "Greater Noida",
+                  "image": "plot",
+                  "meta": [
+                    { "icon": "plot",  "label": "Plot" },
+                    { "icon": "area",  "label": "1,200 Sq.Ft." },
+                    { "icon": "gated", "label": "Gated Society" }
+                  ]
+                }
+              ]
+            },
+            "services": {
+              "eyebrow": "Our Services",
+              "titlePlain": "Comprehensive",
+              "titleAccent": "Real Estate Services",
+              "text": "End-to-end real estate solutions designed to help you buy, sell, rent and invest with confidence.",
+              "items": [
+                { "icon": "home",       "title": "Buy Property",          "text": "Find the right property for your needs and budget." },
+                { "icon": "key",        "title": "Sell Property",         "text": "Get the best value for your property with expert support." },
+                { "icon": "handshake",  "title": "Rent & Lease",          "text": "Flexible rental and leasing solutions for homes and offices." },
+                { "icon": "chart",      "title": "Property Investment",   "text": "Smart and profitable investment opportunities for long-term growth." },
+                { "icon": "building",   "title": "Commercial Spaces",     "text": "Premium office, retail and business spaces for every requirement." },
+                { "icon": "blueprint",  "title": "Property Consultation", "text": "Expert guidance to help you make the right real estate decisions." },
+                { "icon": "management", "title": "Property Management",   "text": "Hassle-free management to maintain and grow your property value." },
+                { "icon": "legal",      "title": "Legal Assistance",      "text": "Complete legal support for a safe and transparent property transaction." }
+              ]
+            },
+            "gallery": {
+              "eyebrow": "Gallery",
+              "titlePlain": "A Glimpse of Our",
+              "titleAccent": "Properties",
+              "text": "Explore a curated collection of our premium residential and commercial spaces.",
+              "items": [
+                { "image": "gallery1", "alt": "Luxury villa with pool at sunset" },
+                { "image": "gallery2", "alt": "Spacious modern living room" },
+                { "image": "gallery3", "alt": "Premium residential apartments" },
+                { "image": "gallery4", "alt": "Modern glass commercial building" },
+                { "image": "gallery5", "alt": "Elegant master bedroom" }
+              ]
+            },
+            "testimonials": {
+              "eyebrow": "Testimonials",
+              "titlePlain": "What Our",
+              "titleAccent": "Clients Say",
+              "text": "Real experiences from people who trusted us with their property journey.",
+              "items": [
+                {
+                  "quote": "NexHaven understood exactly what we were looking for. Their guidance, transparency and support throughout the process made our home-buying journey truly seamless.",
+                  "name": "Rohan Mehta",
+                  "role": "Homeowner, Greenview Residences",
+                  "avatar": "avatarRohan",
+                  "image": "testimonialHouse",
+                  "imageAlt": "Modern family home with garden"
+                },
+                {
+                  "quote": "From the first viewing to the final paperwork, the team was professional and patient. We found a villa that fits our family perfectly, at a fair price.",
+                  "name": "Ananya Sharma",
+                  "role": "Homeowner, Palm Meadows",
+                  "avatar": "avatarAnanya",
+                  "image": "contactHouse",
+                  "imageAlt": "Contemporary house with lawn"
+                },
+                {
+                  "quote": "They helped us lease a premium office space in record time. Clear communication, honest advice and excellent follow-up. Highly recommended.",
+                  "name": "Vikram Singh",
+                  "role": "Founder, Orbit Labs",
+                  "avatar": "avatarVikram",
+                  "image": "aboutHouse",
+                  "imageAlt": "Luxury villa with swimming pool"
+                }
+              ]
+            },
+            "contact": {
+              "eyebrow": "Contact Us",
+              "titlePlain": "Get in Touch",
+              "titleAccent": "with Us",
+              "text": "Have a question or need expert advice? We're here to help you with all your real estate needs.",
+              "image": "contactHouse",
+              "imageAlt": "Contemporary house with lawn",
+              "cards": [
+                { "icon": "phone", "title": "Phone",   "value": "+1 00000 00000" },
+                { "icon": "mail",  "title": "Email",   "value": "info@xyz.com" },
+                { "icon": "pin",   "title": "Address", "value": "350 Fifth Avenue, Suite 4200, New York, NY 10118, USA" }
+              ],
+              "form": {
+                "enquiryLabel": "Enquiry For",
+                "enquiryOptions": [
+                  "Buy Property",
+                  "Sell Property",
+                  "Rent & Lease",
+                  "Property Investment",
+                  "Commercial Spaces",
+                  "Legal Assistance"
+                ],
+                "submit": "Send Message",
+                "success": "Thank you! Our team will get back to you shortly.",
+                "fields": {
+                  "namePlaceholder": "Your Name",
+                  "emailPlaceholder": "Your Email",
+                  "phonePlaceholder": "Phone Number",
+                  "messagePlaceholder": "Your Message"
+                }
+              }
+            },
+            "faqs": {
+              "eyebrow": "FAQs",
+              "titlePlain": "Frequently Asked",
+              "titleAccent": "Questions",
+              "text": "Find quick answers to the most common questions about our properties, services, and buying process.",
+              "sideTitle": "Have Any",
+              "sideAccent": "Questions?",
+              "sideText": "We're here to help you with property buying, selling, and investment options.",
+              "items": [
+                {
+                  "q": "How can I book a property viewing?",
+                  "a": "You can easily book a property viewing by contacting our team through the contact form, phone, or email. We'll schedule a convenient time for you."
+                },
+                {
+                  "q": "Do you offer home loan assistance?",
+                  "a": "Yes. We partner with leading banks and financial institutions to help you compare options, complete paperwork and get the best loan terms."
+                },
+                {
+                  "q": "Are the property prices negotiable?",
+                  "a": "In most cases, yes. Our team will guide you through the market value of the property and negotiate on your behalf for the best possible deal."
+                },
+                {
+                  "q": "What documents are required to buy a property?",
+                  "a": "Typically you need identity and address proof, PAN card, income proofs and the sale agreement. Our legal team will guide you through the full list."
+                },
+                {
+                  "q": "Do you also deal in rental properties?",
+                  "a": "Absolutely. We offer a wide range of residential and commercial rental properties along with complete leasing and management support."
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+
+    "layout": {
+      "maxWidth": "1440px",
+      "container": "mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8",
+      "section": "overflow-x-clip py-6 sm:py-7 xl:py-8",
+      "htmlLang": "en",
+      "htmlClass": "h-full overflow-x-clip scroll-smooth scroll-pt-[84px] antialiased",
+      "bodyClass": "flex min-h-full flex-col overflow-x-clip bg-[#fdfcfb] font-['DM_Sans',system-ui,sans-serif] text-[15px] leading-[1.7] text-[#1d2330] [text-rendering:optimizeLegibility] selection:bg-[#6b1b35] selection:text-white [&_:focus-visible]:rounded-md [&_:focus-visible]:outline-2 [&_:focus-visible]:outline-offset-2 [&_:focus-visible]:outline-[#6b1b35]"
+    },
+
+    "typography": {
+      "heroEyebrow": "text-[11px] font-bold uppercase tracking-[0.28em] text-[#202022] sm:text-[13px] xl:text-[14px]",
+      "heroTitle": "font-['Playfair_Display',Georgia,serif] text-[2rem] leading-[1.06] tracking-[-0.015em] sm:text-[2.6rem] md:text-[3.3rem] lg:text-[3.9rem] xl:text-[4.6rem] 2xl:text-[76px] 2xl:leading-[80px]",
+      "heroTitleAccent": "text-[#6b1b35]",
+      "h2": "font-['Playfair_Display',Georgia,serif] text-[1.8rem] leading-[1.18] tracking-[-0.01em] sm:text-[2.3rem] xl:text-[46px] xl:leading-[54px]",
+      "p": "text-[15px] leading-[1.7] text-[#5b6270] sm:text-[16px] xl:text-[18px] xl:leading-[28px]",
+      "accentColor": "#6b1b35",
+      "textColor": "#1d2330",
+      "mutedColor": "#5b6270"
+    },
+
+    "brand": {
+      "primaryColor": "#6b1b35",
+      "primaryHover": "#561529",
+      "primaryLight": "#f8ece8",
+      "accentColor": "#c0925f",
+      "accentHover": "#a97a49",
+      "textDark": "#1d2330",
+      "textMuted": "#5b6270",
+      "borderColor": "#e8ddd5"
+    }
+  }
+}
